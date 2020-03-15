@@ -15,7 +15,7 @@ def five_cut():
 
     if off_set_per_in <= .001 and off_set_per_in >= -.001:
         print("Congraulations your sled is perfect! /n No adjustment needed")
-    elif move_val > 0:
+    elif move_val < 0:
         print(f"Move fence Backward: {round(move_val,3)}in ")
     else:
         print(f"Move fence Forward: {round(move_val,3) * -1}in")
